@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.8",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,10 +14,15 @@
     "@types/node": "^16.18.12",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "eslint": "^8.0.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
+    "reselect": "^4.1.7",
+    "styled-components": "^5.3.6",
+    "typescript": "*",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -24,10 +33,13 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "eslint:recommended",
+      "plugin:react/recommended"
     ]
   },
+  "lint": "eslint .",
+  "lint:fix": "eslint --fix",
+  "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,5 +51,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.8.4",
+    "pretty-quick": "^3.1.3"
   }
 }

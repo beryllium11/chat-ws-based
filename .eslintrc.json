@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "react/display-name": "off",
+        "@typescript-eslint/no-misused-new": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "import/namespace": "off",
+        "import/no-named-as-default": "off",
+        "react/prop-types": "off",
+        "@typescript-eslint/no-explicit-any": ["warn", { "ignoreRestArgs": false }],
+        "@typescript-eslint/no-use-before-define": [
+            "error",
+            { "variables": false, "functions": false, "classes": false, "typedefs": false }
+        ],
+        "no-console": 1
+    }
+}
