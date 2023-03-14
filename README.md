@@ -1,4 +1,4 @@
-<b>To correct work of the app you you must be logged in https://social-network.samuraijs.com</b>
+<b>To correct work of the app you must be logged in https://social-network.samuraijs.com</b>
 
 # Getting Started with Create React App
 
